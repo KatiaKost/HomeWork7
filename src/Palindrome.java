@@ -8,13 +8,7 @@ public class Palindrome {
         int firstDigit = number / 100;
         int thirdDigit = number % 10;
 
-        if (firstDigit == thirdDigit){
-            System.out.println("Это число-палиндром");
-        }else {
-            System.out.println("Это не число-палиндром");
-        }
-
-
-
+        String message = (firstDigit == thirdDigit) ? "палиндром" : "не палиндром";
+        System.out.print(message);
     }
 }

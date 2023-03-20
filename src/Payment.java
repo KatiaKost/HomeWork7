@@ -10,10 +10,9 @@ public class Payment {
 
         if (estimation > 90) {
             payment = payment * ((payment * 3) / 100);
-            System.out.println("Оплата составляет: " + payment);
         }else {
             payment = payment * (payment / 100);
-            System.out.println("Оплата составляет: " + payment);
         }
+        System.out.println("Оплата составляет: " + payment);
     }
 }
